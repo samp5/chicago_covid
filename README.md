@@ -1,8 +1,6 @@
 ## Covid Wastewater data is the most informative data available
-
-> Wastewater-based epidemiology is an important tool for monitoring Covid-19 activity.
  
-    This chart shows the SARS-CoV-2 virus concentration present in samples of wastewater taken from across Chiacgo. The level of virus in wastewater is a leading indicator, meaning it precedes the change in clinical case counts or hospitalizations.
+This chart shows the SARS-CoV-2 virus concentration present in samples of wastewater taken from across Chiacgo. The level of virus in wastewater is a leading indicator, meaning it precedes the change in clinical case counts or hospitalizations.
 
 ### the data
 - Datapoints are a weighted rolling 10-day average.
@@ -15,10 +13,10 @@
     - Temperature and time-dependent degradation of virus
     - Proportion of virus in the sample that lab is able to quantify
     - PCR inhibition (by other chemicals in wastewater)
-- To *normalize* wastewater concentraion (raw)
-    - NC (normalized concentration) = (Raw concentration) * (Flow rate) / (Pop size)
-    > or
-    - Use a fecal strength indicator (FSI) so NC = RC/FSI
-    - The normalizer in this data is PMMoV (pepper mild mottle virus) which produced a unitless ratio
-        - To obtain a concentration unit: $C_0$, $NC = \frac{NC}{FSI} \times \C_0$
+- Raw concentration can be normalized two ways 
+    1. NC (normalized concentration) = (Raw concentration) * (Flow rate) / (Pop size)
+    
+    2. Use a fecal strength indicator (FSI) so NC = RC/FSI
+        - The normalizer in this data is PMMoV (pepper mild mottle virus) which produced a unitless ratio
+        - To obtain a concentration unit: $C_0$, $NC = \frac{NC}{FSI} \times C_0$
 
