@@ -10,31 +10,24 @@ import {
 	Routes
 } from "react-router-dom";
 
-import { Sidebar, Menu, MenuItem } from 'react-pro-sidebar';
+import { Sidebar, Menu, MenuItem, SubMenu} from 'react-pro-sidebar';
 
 function App(){
 	return (
 		 <Router>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Graph</Link>
-            </li>
-            <li>
-              <Link to="/about">About</Link>
-            </li>
-            <li>
-              <Link to="/users">Users</Link>
-            </li>
-          </ul>
-        </nav>
-
-        {/* A <Switch> looks through its children <Route>s and
-            renders the first one that matches the current URL. */}
+      <div className="app-container">
+				<Sidebar>
+					<Menu>
+						<SubMenu label="The Data">
+							<MenuItem component={<Link to="/"/>}> Basic Time-Series </MenuItem>
+							<MenuItem component={<Link to="YearOverYear"/>}> Year over Year </MenuItem>
+						</SubMenu>
+						<MenuItem component={<Link to="/about"/>}> About </MenuItem>
+					</Menu>
+				</Sidebar>
         <Routes>
           <Route path="/about/" element={<About />} />
-          <Route path="/users/" element={<Users />} />
+          <Route path="/YearOverYear/" element={<YearOverYear />} />
           <Route path="/" element={<Graph />} />
         </Routes>
       </div>
@@ -50,8 +43,8 @@ function About() {
   return <h2>About</h2>;
 }
 
-function Users() {
-  return <h2>Users</h2>;
+function YearOverYear() {
+  return <h2>THIS IS WHERE YEAR OVER YEAR WILL BE</h2>;
 }
 
 export default App
