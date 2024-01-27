@@ -40,9 +40,10 @@ class Graph extends React.Component
 					autotick: true,
 					showgrid: true,
 					automargin:true, 
+
 					font:{
 						color: '#0e2d4c',
-						family:'GT America'
+						family:',serif'
 					},
 				},
 				xaxis:{
@@ -53,7 +54,7 @@ class Graph extends React.Component
 					automargin:true, 
 					font:{
 						color: '#0e2d4c',
-						family:'GT America'
+						family:'serif'
 					},
 					rangeselector: {buttons: [
         {
@@ -81,9 +82,9 @@ class Graph extends React.Component
 				title: {
 					text:'Chicago Covid Wastewater data, 10-day weighted rolling average', 
 					automargin:true, 
-					font:{
+					font: {
+						family: ' ,serif',
 						color: '#0e2d4c',
-						family:'GT America'
 					}
 				}
 			}
