@@ -1,6 +1,5 @@
 import './App.css';
 import React from 'react';
-import Plot from 'react-plotly.js';
 import Graph from './components/Graph.js'
 import YOYGraph from './components/YOYGraph.js'
 import About from './pages/about.js'
@@ -12,7 +11,6 @@ import {
 	Link,
 	Routes
 } from "react-router-dom";
-
 
 function App(){
 	return (
@@ -28,7 +26,4 @@ function App(){
     </Router>
 	);
 }
-
-
-
 export default App
