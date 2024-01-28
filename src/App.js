@@ -2,6 +2,7 @@ import './App.css';
 import React from 'react';
 import Plot from 'react-plotly.js';
 import Graph from './components/Graph.js'
+import YOYGraph from './components/YOYGraph.js'
 import About from './pages/about.js'
 import Sidebar from './components/sidebar.js'
 import {
@@ -20,7 +21,7 @@ function App(){
 				<Sidebar/>
         <Routes>
           <Route path="/about/" element={<About />} />
-          <Route path="/YearOverYear/" element={<YearOverYear />} />
+          <Route path="/YearOverYear/" element={<YOYGraph />} />
           <Route path="/" element={<Graph />} />
         </Routes>
       </div>
@@ -29,8 +30,5 @@ function App(){
 }
 
 
-function YearOverYear() {
-  return <h2>THIS IS WHERE YEAR OVER YEAR WILL BE</h2>;
-}
 
 export default App
