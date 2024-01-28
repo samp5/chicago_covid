@@ -34,7 +34,7 @@ class YOYGraph extends React.Component
 					type: 'scatter',
 					name: '2023',
 					fillcolor: true,
-					hovertemplate:	'<b>2024 <b>%{x|%m-%d}: %{y:.2f}',
+					hovertemplate:	'<b>2023 <b>%{x|%m-%d}: %{y:.2f}',
 					mode: 'lines',
 					line: {
 						color:'#0e2d4c',
@@ -74,7 +74,7 @@ class YOYGraph extends React.Component
 				xaxis:{
 					type: 'date',
 					autorange: true,
-					tickformat:"%b",
+					tickformat:"%b %d",
 					title: 'Date',
 					showgrid: true,
 					automargin:true, 
