@@ -6,9 +6,7 @@ import About from './pages/about.js'
 import Sidebar from './components/sidebar.js'
 import {
 	BrowserRouter as Router,
-	Switch,
 	Route,
-	Link,
 	Routes
 } from "react-router-dom";
 
