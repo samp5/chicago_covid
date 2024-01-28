@@ -27,7 +27,6 @@ const sideBar = () => {
 					Year over Year 
 				</MenuItem>
 			</SubMenu>
-			<MenuItem component={<Link to="/about"/>}> About </MenuItem>
 		</Menu>
 	</Sidebar>
 	)

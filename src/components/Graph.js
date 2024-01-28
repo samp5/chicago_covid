@@ -31,7 +31,7 @@ class Graph extends React.Component
 					mode: 'lines',
 					line: {
 						color:'#0e2d4c',
-						width: 2,
+						width: 3,
 					}
 				}],
 			layout: {
