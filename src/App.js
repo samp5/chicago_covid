@@ -14,12 +14,16 @@ function App(){
 	return (
 		 <Router>
       <div className="app-container">
-				<Sidebar/>
+				<div className="sidebar-container">
+					<Sidebar/>
+				</div >
+				<div className="main-content">
         <Routes>
           <Route path="/about/" element={<About />} />
           <Route path="/YearOverYear/" element={<YOYGraph />} />
           <Route path="/" element={<Graph />} />
         </Routes>
+      </div>
       </div>
     </Router>
 	);

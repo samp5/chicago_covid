@@ -29,8 +29,11 @@ class Graph extends React.Component
 					type: 'scatter',
 					name: 'shan',
 					mode: 'lines',
+					hoveron:"fills+points",
+					fill: "tozeroy",
+					fillcolor: '#80d2ff',
 					line: {
-						color:'#0e2d4c',
+						color:'#28628e',
 						width: 3,
 					}
 				}],
@@ -40,21 +43,22 @@ class Graph extends React.Component
 					autotick: true,
 					showgrid: true,
 					automargin:true, 
-
-					font:{
+					font: {
+						family: 'trebuchet ms,sans-serif',
 						color: '#0e2d4c',
-						family:',serif'
+						size: 20,
 					},
 				},
 				xaxis:{
 					type: 'date',
 					autorange: true,
 					title: 'Date',
-					showgrid: true,
+					showgrid: false,
 					automargin:true, 
-					font:{
+					font: {
+						family: 'trebuchet ms,sans-serif',
 						color: '#0e2d4c',
-						family:'serif'
+						size: 20,
 					},
 					rangeselector: {buttons: [
         {
@@ -83,8 +87,9 @@ class Graph extends React.Component
 					text:'Chicago Covid Wastewater data, 10-day weighted rolling average', 
 					automargin:true, 
 					font: {
-						family: ' ,serif',
+						family: 'trebuchet ms,sans-serif',
 						color: '#0e2d4c',
+						size: 20,
 					}
 				}
 			}
