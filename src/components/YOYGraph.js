@@ -77,7 +77,7 @@ class YOYGraph extends React.Component
 					autorange: true,
 					tickformat:"%b %d",
 					title: 'Date',
-					showgrid: true,
+					showgrid: false,
 					automargin:true, 
 					font: {
 						family: 'trebuchet ms,sans-serif',
