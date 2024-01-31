@@ -31,7 +31,7 @@ class Graph extends React.Component
 					mode: 'lines',
 					hoveron:"fills+points",
 					fill: "tozeroy",
-					fillcolor: '#80d2ff',
+					fillcolor: '#c9ebff',
 					line: {
 						color:'#28628e',
 						width: 3,
