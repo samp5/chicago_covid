@@ -314,6 +314,7 @@ class Dataset():
             newconcList.append(conc)
 
 
+
         with open("time_series.txt", "w") as file:
             file.write("NEW DATE LIST:\n")
             list_str = "[" 
