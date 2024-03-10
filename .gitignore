@@ -16,6 +16,9 @@ notes.md
 # production
 /build
 
+# python directory venv
+/python/venv
+
 # misc
 .DS_Store
 .env.local
